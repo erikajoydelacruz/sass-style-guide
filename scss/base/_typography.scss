@@ -3,7 +3,7 @@
 /* ============================================= */
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: $font-main;
   color: $text-color;
   box-sizing: border-box;
 }
@@ -32,12 +32,12 @@ a {
   
   .link {
     color: $color-default;
-    font-weight: 700;
+    font-weight: map-get($font-weight, 'heavy');
   }
   
   .blockquote {
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: map-get($font-weight, 'regular');
     font-style: italic;
     margin-left: 20px;
     padding-left: 20px;
